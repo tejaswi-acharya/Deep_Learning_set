@@ -1,0 +1,23 @@
+Different CNN architechtures:
+1. LeNet
+2. Alex NET
+3. Google NET
+4. VggNET
+5. ResNTE
+6. Inception
+
+-LeNet is also called as LeNet-5 because it has 5-layers.
+
+layer1)input=32x32 image is passed to convolution layer
+
+layer2)convolution layer(filters[no=6] size=5x5) and avgPooling layer(size=2x2 and strides=2)
+
+layer3)repeated the same combination (convolution layer[filters no.=16, size=5x5]+pooling layer)
+
+layer4)the resultant tensor is passed to flatten its dimension to 1D tensor.
+
+layer5)1D is passed to fully connected layer with 120 neurons which is further passed to another fully connected layer with 84 neurons and finally with softmax funciton at the output layer with 10 neurons to classify numbers, the output is finally obtained
+
+NOTE:
+whenever we go deeper to the CNN the number of filters size   keep on increasing with every layers
+nowadays people use relu as an activation function but back then when lenet was found, tanh was used as activation function.
